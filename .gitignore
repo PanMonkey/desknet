@@ -20,3 +20,8 @@
 .*~
 *.swp
 
+.project
+.DS_Store
+.idea
+.secret
+
