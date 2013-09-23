@@ -44,10 +44,20 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# 論理削除
+gem 'paranoia'
+
+# 認証機能
+gem 'bcrypt-ruby'
+
 group :test, :development do
   gem 'pry'
   gem 'pry-rails'
-  gem 'rspec-rails'  
-  gem 'capybara'  
-end  
+
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'factory_girl_rails'
+  gem 'spring'
+end
 
