@@ -1,5 +1,9 @@
+# -*- coding: utf-8 -*-
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
+
+  # 認証していない場合、ログイン画面へリダイレクト
+  before_filter :authenticate_user!
 end
