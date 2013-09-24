@@ -48,14 +48,14 @@ end
 gem 'paranoia'
 
 # 認証機能
-gem 'bcrypt-ruby'
+gem 'devise'
 
 group :test, :development do
   gem 'pry'
   gem 'pry-rails'
 
-  gem 'rspec-rails'
   gem 'capybara'
+  gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'factory_girl_rails'
   gem 'spring'
