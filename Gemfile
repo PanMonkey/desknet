@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -50,7 +51,18 @@ gem 'paranoia'
 # 認証機能
 gem 'devise'
 
+# エラーメッセージ表示ライブラリ
+gem 'dynamic_form'
+
+# ページネーション
+gem 'kaminari'
+
+# ドキュメント
+gem 'yard'
+
 group :test, :development do
+  gem 'thin'
+
   gem 'pry'
   gem 'pry-rails'
 
