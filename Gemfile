@@ -60,12 +60,24 @@ gem 'kaminari'
 # ドキュメント
 gem 'yard'
 
-group :test, :development do
+group :development do
   gem 'thin'
-
   gem 'pry'
   gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-debugger'
+  gem 'pry-coolline'
+  gem 'hirb'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  # = フッターにデバック情報を表示
+  # 初期設定
+  # $ rails generate rails_footnotes:install
+  # gem 'rails-footnotes'
+  gem 'rails-footnotes', :git => 'git://github.com/tommireinikainen/rails-footnotes'
+end
 
+group :test, :development do
   gem 'capybara'
   gem 'rspec-rails'
   gem 'guard-rspec'

@@ -5,5 +5,5 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   # 認証していない場合、ログイン画面へリダイレクト
-  before_filter :authenticate_user!
+#  before_filter :authenticate_user!
 end

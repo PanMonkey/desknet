@@ -1,6 +1,16 @@
 Desknet::Application.routes.draw do
 
-  devise_for :users
+  devise_for :users, skip: [:sessions]
+  #    get "/login" => "devise/sessions#new"
+  #    get "/register" => "devise/registrations#new"
+  # end
+
+  devise_scope :users do
+    get 'sign_in' => 'devise/sessions#new'
+    post 'sign_in' => 'devise/sessions#create'
+    delete 'sign_out' => 'devise/sessions#destroy'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
