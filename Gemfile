@@ -57,10 +57,13 @@ gem 'dynamic_form'
 # ページネーション
 gem 'kaminari'
 
-# ドキュメント
-gem 'yard'
+# モデルに対してデコレータを定義
+gem 'active_decorator'
 
 group :development do
+  # ドキュメント
+  gem 'yard'
+
   gem 'thin'
   gem 'pry'
   gem 'pry-rails'
