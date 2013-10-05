@@ -60,6 +60,9 @@ gem 'kaminari'
 # モデルに対してデコレータを定義
 gem 'active_decorator'
 
+# Twitter Bootstrap
+gem 'bootstrap-sass'
+
 group :development do
   # ドキュメント
   gem 'yard'
@@ -86,5 +89,7 @@ group :test, :development do
   gem 'guard-rspec'
   gem 'factory_girl_rails'
   gem 'spring'
+  # ダミー文字列作成ライブラリ
+  gem 'faker'
 end
 
